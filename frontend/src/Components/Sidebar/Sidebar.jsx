@@ -1,13 +1,14 @@
 import React from "react";
 import "./Sidebar.css";
-const Sidebar = () => {
+
+const Sidebar = ({ setActiveSection }) => {
   return (
     <div className="sidebar">
-      <h2 className="sidebar-title">Employee Name</h2>
+      <h2 className="sidebar-title">Welcome</h2>
       <ul className="sidebar-menu">
-        <li>Schedules</li>
-        <li>Inventory</li>
-        <li>Budget</li>
+        <li onClick={() => setActiveSection("Schedules")}>Schedules</li>
+        <li onClick={() => setActiveSection("Inventory")}>Inventory</li>
+        <li onClick={() => setActiveSection("Budget")}>Budget</li>
       </ul>
     </div>
   );
