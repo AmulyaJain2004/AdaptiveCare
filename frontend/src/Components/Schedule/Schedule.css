@@ -1,0 +1,31 @@
+.schedule {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule h2 {
+    margin-bottom: 20px;
+  }
+  
+  .schedule table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .schedule th, .schedule td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .schedule th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .schedule tr:hover {
+    background-color: #f1f1f1;
+  }
+  

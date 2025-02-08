@@ -1,0 +1,45 @@
+/* Order Table Container */
+.order-table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .order-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-table th,
+  .order-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-table th {
+    background-color: #f1f1f1;
+  }
+  
+  /* Status Colors */
+  .status {
+    font-weight: bold;
+  }
+  
+  .status-dispatched {
+    color: #1e90ff;
+  }
+  
+  .status-completed {
+    color: #28a745;
+  }
+  
