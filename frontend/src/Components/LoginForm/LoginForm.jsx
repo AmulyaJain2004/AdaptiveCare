@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./LoginForm.css";
+import employees from "../../data/employees";
 
 const LoginForm = ({ onLoginSuccess }) => {
   const [email, setEmail] = useState("");
@@ -8,10 +9,13 @@ const LoginForm = ({ onLoginSuccess }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mockUser = { email: "admin@example.com", password: "password123" };
 
-    if (email === mockUser.email && password === mockUser.password) {
-      onLoginSuccess();
+    const user = employees.find(
+      (employee) => employee.email === email && employee.password === password
+    );
+
+    if (user) {
+      onLoginSuccess(user);
     } else {
       setError("Invalid credentials!");
     }

@@ -1,13 +1,21 @@
 import React from "react";
-import Sidebar from "../../Components/Sidebar/Sidebar"; // Import Sidebar
-import OrderTable from "../../Components/OrderTable/OrderTable"; // Import OrderTable
-import "./AdminDashboard.css"; // Include any styles for AdminDashboard if applicable
+import Sidebar from "../../Components/Sidebar/Sidebar";
+import "./AdminDashboard.css";
 
-const AdminDashboard = () => {
+const AdminDashboard = ({ user }) => {
   return (
     <div className="admin-dashboard">
       <Sidebar />
-      <OrderTable />
+      <div className="dashboard-content">
+        <h1>Welcome, {user.name}</h1>
+        <h2>Role: {user.role}</h2>
+        <h3>Tasks:</h3>
+        <ul>
+          {user.tasks.map((task, index) => (
+            <li key={index}>{task}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

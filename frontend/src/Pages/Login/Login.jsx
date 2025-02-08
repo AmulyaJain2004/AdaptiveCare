@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import LoginForm from "../../Components/LoginForm/LoginForm";
 
-
-const Login = ({ setIsAuthenticated }) => {
+const Login = ({ setAuthenticatedUser }) => {
   const navigate = useNavigate();
 
-  const handleLoginSuccess = () => {
-    setIsAuthenticated(true);
+  const handleLoginSuccess = (user) => {
+    setAuthenticatedUser(user);
     navigate("/AdminDashboard");
   };
 

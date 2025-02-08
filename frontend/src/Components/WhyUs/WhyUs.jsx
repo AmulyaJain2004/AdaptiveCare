@@ -12,14 +12,14 @@ const WhyUs = () => {
         </p>
       </div>
       <div className="whyus-grid">
-        <div className="whyus-card card-red">
+        <div className="whyus-card">
           <h3>Passionate Team</h3>
           <p>
             Our team is driven by passion and dedication, ensuring top-quality
             services and solutions tailored to your needs.
           </p>
         </div>
-        <div className="whyus-card card-orange">
+        <div className="whyus-card">
           <h3>Innovative Approach</h3>
           <p>
             We leverage cutting-edge technologies and out-of-the-box thinking
