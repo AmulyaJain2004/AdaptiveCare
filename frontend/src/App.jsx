@@ -7,6 +7,7 @@ import Login from "./Pages/Login/Login";
 import AdminDashboard from "./Pages/AdminDashboard/AdminDashboard";
 import Footer from "./Components/Footer/Footer";
 import JoinUs from "./Pages/JoinUs/JoinUs";
+import HealthCareStaffPortal from "./Pages/HealthCareStaffPortal/HealthCareStaffPortal"
 
 function App() {
   const [authenticatedUser, setAuthenticatedUser] = useState(null);
@@ -36,6 +37,16 @@ function App() {
             element={
               authenticatedUser ? (
                 <JoinUs user={authenticatedUser} />
+              ) : (
+                <Navigate to="/login" replace />
+              )
+            }
+          />
+          <Route
+            path="/HealthCareStaffPortal"
+            element={
+              authenticatedUser ? (
+                <HealthCareStaffPortal user={authenticatedUser} />
               ) : (
                 <Navigate to="/login" replace />
               )

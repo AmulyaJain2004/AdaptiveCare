@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-section">
-        <h2>The agency for impatient brands®</h2>
+        <h2>AdaptiveCare®</h2>
       </div>
 
       <div className="footer-section">
@@ -28,7 +28,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-section">
-        <h3>WANT TO BE THE SMARTEST IN YOUR OFFICE?</h3>
+        <h3>THE ROAD TO FITNESS</h3>
         <a href="#">SIGN UP FOR OUR NEWSLETTER </a>
         <div className="social-links">
           <a href="#"><i className="fab fa-behance"></i></a>
